@@ -1,0 +1,74 @@
+<!-- HTML is primarly used to create and structure the content of a website -->
+<!-- This page focuses on the content of the website -->
+
+<!DOCTYPE html>
+<html>
+<!-- <head></head> contains details about HTML file which are not visible in the webpage -->
+<head>
+	<meta chatset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2048</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+
+		<!-- Paired tags: <opening tag> </closing tag> -->
+		<h1>2048</h1>
+		<h2>Created by: Pael</h2>
+		<hr id="top-line">
+
+		<div class="header-container">
+			<!-- <h2>Score: <span id="score">0</span></h2> -->
+			<div class="score-container">
+				<div class="score-label">Score: </div>
+				<div id="score">0</div>
+			</div>
+
+			<div class="share-button-container">
+				<div class="share-label">Share: </div>
+				<div class="share-icons">
+					<!-- <a> tag (anchor tag) is for creating hyperlinks -->
+					<a href="https://www.facebook.com/sharer/sharer.php?u=[your-deployment-link]" target="_blank">
+						<img src="./images/share_2048-fb.svg">
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<!-- <div> tags are usually used as container to group contents -->
+		<div id="board">
+
+		<!-- 	<div class="tile x2">[r0, c0]</div>
+			<div class="tile x4">[r0, c1]</div>
+			<div class="tile x8">[r0, c2]</div>
+			<div class="tile x2048">[r0, c3]</div>
+
+			<div class="tile">[r1, c0]</div>
+			<div class="tile">[r1, c1]</div>
+			<div class="tile">[r1, c2]</div>
+			<div class="tile">[r1, c3]</div>
+
+			<div class="tile">[r2, c0]</div>
+			<div class="tile">[r2, c1]</div>
+			<div class="tile">[r2, c2]</div>
+			<div class="tile">[r2, c3]</div>
+
+			<div class="tile">[r3, c0]</div>
+			<div class="tile">[r3, c1]</div>
+			<div class="tile">[r3, c2]</div>
+			<div class="tile">[r3, c3]</div>
+	 -->
+		</div>
+
+	</div>
+
+
+	<script src="logic.js"></script>
+
+</body>
+</html>
